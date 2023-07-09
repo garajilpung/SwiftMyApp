@@ -1,0 +1,16 @@
+PODS:
+  - StringExtensionHTML (1.0.2)
+
+DEPENDENCIES:
+  - StringExtensionHTML
+
+SPEC REPOS:
+  trunk:
+    - StringExtensionHTML
+
+SPEC CHECKSUMS:
+  StringExtensionHTML: 856dcc0c705012ae2f9c29c7413b015b82133e52
+
+PODFILE CHECKSUM: 666f9b3b467598bda36bd81a266b8e147e916970
+
+COCOAPODS: 1.11.2

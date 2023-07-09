@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+use_frameworks!
+
+workspace 'MyApp'
+project 'Domain/Domain.project'
+project 'MyApp/MyApp.project'
+
+def shared_pods
+	pod 'StringExtensionHTML'
+
+end 
+
+target "MyApp" do 
+	project 'MyApp/MyApp.project' 
+	shared_pods
+end
+
+target "Domain" do 
+	project 'Domain/Domain.project' 
+	shared_pods
+end
+
+target "xcFramework_Domain" do 
+	project 'Domain/Domain.project'
+	shared_pods
+end

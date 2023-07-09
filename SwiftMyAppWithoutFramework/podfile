@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+use_frameworks!
+
+workspace 'MyApp'
+project 'MyApp/MyApp.project'
+
+def shared_pods
+	pod 'StringExtensionHTML'
+end 
+
+target "MyApp" do 
+	project 'MyApp/MyApp.project' 
+	shared_pods
+end
